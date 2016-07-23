@@ -6,7 +6,6 @@ repositories {
     }
 }
 
-
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.3"
@@ -37,4 +36,6 @@ dependencies {
     compile 'com.squareup.okhttp3:okhttp:3.4.1'
     //PRogress bar
     compile 'com.github.rahatarmanahmed:circularprogressview:2.5.0'
+    // ORM
+    compile 'com.github.satyan:sugar:1.4'
 }

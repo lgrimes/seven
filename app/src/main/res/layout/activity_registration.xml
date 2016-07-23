@@ -8,7 +8,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_horizontal_margin"
-        android:text="Welcome\nSign up to continue"
+        android:text="Welcome\nSign in to start giving"
         android:layout_alignParentTop="true"
         android:textSize="30sp"
         android:id="@+id/intro_title"/>
@@ -22,7 +22,8 @@
             android:id="@+id/username_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Username"/>
+            android:hint="Username"
+            android:text="lauren.grimes@gmail.com"/>
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
@@ -36,6 +37,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
+            android:text="Test1234"
             android:hint="Password"/>
     </android.support.design.widget.TextInputLayout>
 
@@ -43,7 +45,7 @@
         style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
         android:id="@+id/button"
         android:layout_width="match_parent"
-        android:text="Create account"
+        android:text="Login"
         android:layout_alignParentBottom="true"
         android:layout_margin="@dimen/activity_horizontal_margin"
         android:layout_height="wrap_content" />
