@@ -3,4 +3,8 @@
 
     <string name="kinvey_app_id">kid_HJW2c4x_</string>
     <string name="kinvey_api_token">8af341776ddf47d3a60b3721b9f19532</string>
+    <string name="intro_to_charity">Intro to Charity</string>
+    <string name="charity_info">Here is some basic info about how you can learn more and earn stars!</string>
+    <string name="learn">Tap Here to Start Learning</string>
+    <string name="finish_learn">Return</string>
 </resources>
