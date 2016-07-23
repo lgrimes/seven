@@ -1,10 +1,13 @@
 package au.com.shehacks.seven.seven;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
 
-import au.com.shehacks.seven.seven.views.images.ProfileThumbnailView;
+import au.com.shehacks.seven.seven.views.cells.ProfileThumbnailView;
 
 /**
  * Seven
@@ -15,6 +18,7 @@ public class UserSelectionActivity extends AppCompatActivity {
     ProfileThumbnailView childOne;
     ProfileThumbnailView childTwo;
     ProfileThumbnailView childThree;
+    Button leaderboardButton;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -33,6 +37,14 @@ public class UserSelectionActivity extends AppCompatActivity {
         childOne = (ProfileThumbnailView) findViewById(R.id.child_one);
         childTwo = (ProfileThumbnailView) findViewById(R.id.child_two);
         childThree = (ProfileThumbnailView) findViewById(R.id.child_three);
+        leaderboardButton = (Button) findViewById(R.id.submit_button);
+        leaderboardButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), LeaderboardActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void setupChildren() {
