@@ -68,7 +68,7 @@ public class BaseActivity extends AppCompatActivity
         Bundle args = new Bundle();
         switch (item.getItemId()) {
             case R.id.nav_goals:
-                intent = new Intent(this, MainActivity.class);
+                intent = new Intent(this, DashboardActivity.class);
                 startActivity(intent);
                 break;
 
@@ -77,11 +77,15 @@ public class BaseActivity extends AppCompatActivity
                 startActivity(intent);
                 break;
 
-            case R.id.nav_progress:
-                intent = new Intent(this, MainActivity.class);
+            case R.id.nav_users:
+                intent = new Intent(this, UserSelectionActivity.class);
                 startActivity(intent);
                 break;
 
+            case R.id.nav_settings:
+                intent = new Intent(this, UserSelectionActivity.class);
+                startActivity(intent);
+                break;
         }
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
