@@ -33,8 +33,6 @@
 
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <!-- ATTENTION: This data URL was auto-generated. We recommend that you use the HTTP scheme.
-                  TODO: Change the host or pathPrefix as necessary. -->
                 <data
                     android:host="seven.seven.shehacks.com.au"
                     android:pathPrefix="/education"
@@ -43,15 +41,11 @@
         </activity>
         <activity android:name=".EducationLearnActivity"
             android:theme="@style/AppTheme.NoActionBar">
-            <!-- ATTENTION: This intent was auto-generated. Follow instructions at
-      https://g.co/AppIndexing/AndroidStudio to publish your URLs. -->
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <!-- ATTENTION: This data URL was auto-generated. We recommend that you use the HTTP scheme.
-                  TODO: Change the host or pathPrefix as necessary. -->
                 <data
                     android:host="seven.seven.shehacks.com.au"
                     android:pathPrefix="/educationlearn"
@@ -59,15 +53,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".EducationLearnPickActivity" android:theme="@style/AppTheme.NoActionBar">
-            <!-- ATTENTION: This intent was auto-generated. Follow instructions at
-      https://g.co/AppIndexing/AndroidStudio to publish your URLs. -->
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <!-- ATTENTION: This data URL was auto-generated. We recommend that you use the HTTP scheme.
-                  TODO: Change the host or pathPrefix as necessary. -->
                 <data
                     android:host="seven.seven.shehacks.com.au"
                     android:pathPrefix="/educationlearnpick"
