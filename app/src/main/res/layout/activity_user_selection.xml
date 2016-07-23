@@ -18,12 +18,12 @@
             android:orientation="horizontal"
             android:layout_weight="1"
             android:weightSum="2">
-            <au.com.shehacks.seven.seven.views.images.ProfileThumbnailView
+            <au.com.shehacks.seven.seven.views.cells.ProfileThumbnailView
                 android:id="@+id/child_one"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"/>
-            <au.com.shehacks.seven.seven.views.images.ProfileThumbnailView
+            <au.com.shehacks.seven.seven.views.cells.ProfileThumbnailView
                 android:id="@+id/child_two"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -32,7 +32,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content" >
-            <au.com.shehacks.seven.seven.views.images.ProfileThumbnailView
+            <au.com.shehacks.seven.seven.views.cells.ProfileThumbnailView
                 android:id="@+id/child_three"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
@@ -46,6 +46,5 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:text="Leaderboard"
-        android:textColor="@color/white"
-        />
+        android:textColor="@color/white" />
 </RelativeLayout>
