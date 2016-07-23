@@ -1,6 +1,7 @@
 package au.com.shehacks.seven.seven;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -21,6 +22,7 @@ public class BaseActivity extends AppCompatActivity
     private NavigationView navigationView;
     private DrawerLayout drawer;
     protected Menu navigationMenu;
+    private Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,12 +68,18 @@ public class BaseActivity extends AppCompatActivity
         Bundle args = new Bundle();
         switch (item.getItemId()) {
             case R.id.nav_goals:
+                intent = new Intent(this, MainActivity.class);
+                startActivity(intent);
                 break;
 
             case R.id.nav_learn:
+                intent = new Intent(this, EducationActivity.class);
+                startActivity(intent);
                 break;
 
             case R.id.nav_progress:
+                intent = new Intent(this, MainActivity.class);
+                startActivity(intent);
                 break;
 
         }

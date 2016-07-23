@@ -4,35 +4,11 @@
     android:layout_height="match_parent"
     android:weightSum="1">
 
-    <ProgressBar
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="20dp"
-        android:id="@+id/progressBar"
-        android:indeterminate="false"
-        android:background="#98ffe27a"
-        android:backgroundTint="#ddfdff91"
-        android:clickable="false"
-        android:progress="59"
-        android:progressBackgroundTint="#fff71b"
-        android:progressTint="#fff71b"
-        android:layout_gravity="center_horizontal"
-        android:layout_weight="0.25" />
-
     <VideoView
         android:layout_width="match_parent"
         android:layout_height="353dp"
         android:id="@+id/videoView"
         android:layout_gravity="center_horizontal"
         android:layout_margin="20dp" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/finish_learn"
-        android:id="@+id/button2"
-        android:layout_gravity="center_horizontal"
-        android:layout_weight="0.25"
-        android:background="#a2ffc2" />
 
 </LinearLayout>

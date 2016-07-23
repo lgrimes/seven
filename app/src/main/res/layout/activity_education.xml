@@ -1,58 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".EducationActivity"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="1">
 
 
-    <ProgressBar
-        style="?android:attr/progressBarStyleHorizontal"
+    <ImageButton
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/starProgress"
-        android:indeterminate="false"
-        android:background="#98ffe27a"
-        android:backgroundTint="#ddfdff91"
-        android:layout_weight="0.05"
-        android:clickable="false"
-        android:progress="59"
-        android:progressBackgroundTint="#fff71b"
-        android:progressTint="#fff71b" />
-
-    <TextView
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/intro_to_charity"
-        android:id="@+id/eduIntro"
-        android:layout_gravity="center_horizontal"
-        android:padding="30dp"
-        android:textSize="35sp"
-        android:layout_margin="20dp" />
-
-    <TextView
-        android:layout_width="345dp"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/charity_info"
-        android:id="@+id/basic_charity_info"
-        android:layout_gravity="center_horizontal"
-        android:padding="10dp"
-        android:textSize="25sp"
-        android:textAlignment="center" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="114dp"
-        android:text="@string/learn"
-        android:id="@+id/learn"
-        android:layout_gravity="center_horizontal"
-        android:textStyle="bold"
-        android:typeface="normal"
-        android:enabled="true"
-        android:background="#ffe523"
+        android:layout_height="match_parent"
+        android:id="@+id/btnEduPick"
+        android:visibility="visible"
+        android:layout_alignParentEnd="true"
+        android:onClick="pick"
         android:clickable="true"
-        android:padding="20dp"
-        android:layout_margin="100dp"
-        android:onClick="learn"/>
-</LinearLayout>
+        android:enabled="true"
+        android:background="@drawable/landing_edu"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="@string/education_home_background" />
+</RelativeLayout>
