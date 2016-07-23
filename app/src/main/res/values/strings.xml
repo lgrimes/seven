@@ -8,4 +8,7 @@
     <string name="charity_info">Here is some basic info about how you can learn more and earn stars!</string>
     <string name="learn">Tap Here to Start Learning</string>
     <string name="finish_learn">Return</string>
+    <string name="education_home_background">education home background</string>
+    <string name="education_pick_page">Education pick page</string>
+    <string name="new_button">New Button</string>
 </resources>
