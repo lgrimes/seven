@@ -17,7 +17,7 @@ import au.com.shehacks.seven.seven.views.images.LargeThumbnailImageView;
 public class ProfileThumbnailView extends RelativeLayout {
 
     TextView usernameText;
-    LargeThumbnailImageView imageView;
+    public LargeThumbnailImageView imageView;
 
     public ProfileThumbnailView(Context context) {
         super(context);
