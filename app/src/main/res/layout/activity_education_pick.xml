@@ -16,6 +16,5 @@
         android:visibility="visible"
         android:clickable="true"
         android:enabled="true"
-        android:background="@drawable/pick_edu"
         android:contentDescription="@string/education_pick_page" />
 </RelativeLayout>
