@@ -50,6 +50,11 @@ public class UserSelectionActivity extends AppCompatActivity {
     private void setupChildren() {
         childOne.setUsernameAndImage("Jessica", getResources().getDrawable(R.drawable.sprout));
         childTwo.setUsernameAndImage("Tom", getResources().getDrawable(R.drawable.sprout));
-        childThree.setUsernameAndImage("Ashleigh", getResources().getDrawable(R.drawable.sprout));
+        childThree.setUsernameAndImage("Make New", getResources().getDrawable(R.drawable.add_child));
+    }
+
+    public void newChild(View view){
+        Intent intent = new Intent(this, RegisterChildActivity.class);
+        startActivity(intent);
     }
 }

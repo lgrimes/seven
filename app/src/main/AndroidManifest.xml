@@ -30,9 +30,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".BaseActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
         <activity android:name=".EducationActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -71,6 +68,19 @@
                     android:scheme="http" />
             </intent-filter>
         </activity>
+        <activity android:name=".RegisterChildActivity" android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:host="seven.seven.shehacks.com.au"
+                    android:pathPrefix="/educationlearnpick"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>

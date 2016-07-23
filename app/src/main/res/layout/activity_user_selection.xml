@@ -35,7 +35,9 @@
             <au.com.shehacks.seven.seven.views.cells.ProfileThumbnailView
                 android:id="@+id/child_three"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:onClick="newChild"
+                android:clickable="true" />
         </LinearLayout>
     </LinearLayout>
     <Button
@@ -46,5 +48,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:text="Leaderboard"
-        android:textColor="@color/white" />
+        android:textColor="@color/white"
+        />
 </RelativeLayout>
