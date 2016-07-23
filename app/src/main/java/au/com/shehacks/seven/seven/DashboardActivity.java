@@ -2,7 +2,7 @@ package au.com.shehacks.seven.seven;
 
 import android.os.Bundle;
 
-public class MainActivity extends BaseActivity {
+public class DashboardActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
