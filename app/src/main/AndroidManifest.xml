@@ -20,6 +20,9 @@
         <activity android:name=".BaseActivity"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
+        <activity android:name=".LeaderboardActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
         <activity android:name=".UserSelectionActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
