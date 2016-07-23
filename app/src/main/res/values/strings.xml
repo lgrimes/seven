@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Seven</string>
+
+    <string name="kinvey_app_id">kid_HJW2c4x_</string>
+    <string name="kinvey_api_token">8af341776ddf47d3a60b3721b9f19532</string>
 </resources>
