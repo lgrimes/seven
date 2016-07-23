@@ -1,5 +1,6 @@
 package au.com.shehacks.seven.seven;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -11,6 +12,7 @@ import android.widget.EditText;
 import com.kinvey.java.User;
 
 import au.com.shehacks.seven.seven.callbacks.LoginCallback;
+import au.com.shehacks.seven.seven.managers.IntentManager;
 import au.com.shehacks.seven.seven.managers.UserManager;
 
 /**
@@ -45,16 +47,25 @@ public class RegistrationActivity extends AppCompatActivity {
     }
 
     private void create() {
-        UserManager.sharedManager().create(usernameEditText.getText().toString(), passwordEditText.getText().toString(), new LoginCallback() {
-            @Override
-            public void onSuccess(User user) {
-                Log.d("USER","created user");
-            }
-
-            @Override
-            public void onFailure(Exception ex) {
-                Log.d("USER","failed to created user");
-            }
-        });
+        String username = usernameEditText.getText().toString();
+        String password = passwordEditText.getText().toString();
+        startActivity(IntentManager.dashboard(getApplicationContext()));
+//        UserManager.sharedManager().login(username, password, new LoginCallback() {
+//            @Override
+//            public void onSuccess(User user) {
+//                Log.d("USER","created user");
+//                runOnUiThread(new Runnable() {
+//                    @Override
+//                    public void run() {
+//
+//                    }
+//                });
+//            }
+//
+//            @Override
+//            public void onFailure(Exception ex) {
+//                Log.d("USER","failed to created user");
+//            }
+//        });
     }
 }
