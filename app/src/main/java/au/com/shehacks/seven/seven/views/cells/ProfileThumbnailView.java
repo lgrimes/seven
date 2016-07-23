@@ -1,4 +1,4 @@
-package au.com.shehacks.seven.seven.views.images;
+package au.com.shehacks.seven.seven.views.cells;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import au.com.shehacks.seven.seven.R;
+import au.com.shehacks.seven.seven.views.images.LargeThumbnailImageView;
 
 /**
  * Seven
