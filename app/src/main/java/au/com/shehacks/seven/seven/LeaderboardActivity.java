@@ -43,6 +43,9 @@ public class LeaderboardActivity extends AppCompatActivity {
 
     @Override
     protected void onStart() {
+        childOneCell.setDetails("Mum - 25% Completed", getResources().getDrawable(R.drawable.koala_orange));
+        childTwoCell.setDetails("Curtis - 65% Completed", getResources().getDrawable(R.drawable.fox_green));
+        childThreeCell.setDetails("Anna - 40% Completed", getResources().getDrawable(R.drawable.whale_yellow));
         super.onStart();
         Display display = getWindowManager().getDefaultDisplay();
         Point size = new Point();
