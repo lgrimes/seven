@@ -1,21 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
     tools:context=".EducationActivity"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="1">
-
-
-    <ImageButton
+    android:background="@drawable/journey_sprout">
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/btnEduPick"
-        android:visibility="visible"
-        android:layout_alignParentEnd="true"
-        android:onClick="pick"
-        android:clickable="true"
-        android:enabled="true"
-        android:background="@drawable/landing_edu"
-        android:layout_alignParentBottom="true"
-        android:contentDescription="@string/education_home_background" />
-</RelativeLayout>
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/text_views">
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="170dp">
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="LESSON 3"
+            android:textSize="26sp"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="7dp"/>
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="What impact can $5 make? (10 mins)"
+            android:layout_margin="@dimen/activity_horizontal_margin"/>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="170dp">
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="LESSON 2"
+                android:layout_gravity="end"
+                android:textSize="26sp"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="7dp"/>
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="Why should i donate? (7 Mins)"
+                android:layout_margin="@dimen/activity_horizontal_margin"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="170dp">
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="LESSON 1"
+                android:textSize="26sp"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="7dp"/>
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="What impact can $5 make?\n(6 Mins)"
+                android:layout_margin="@dimen/activity_horizontal_margin"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
