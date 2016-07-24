@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="primaryPurple">#660066</color>
+    <color name="primaryYellow">#ff9933</color>
+    <color name="primaryDarkGreen">#669999</color>
+    <color name="primaryOrange">#ff6633</color>
+
     <color name="colorPrimary">#B3DBc0</color>
     <color name="colorPrimaryDark">#67BACA</color>
     <color name="colorSecondary">#FDF6F6</color>

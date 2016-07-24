@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="100dp">
+    android:layout_height="100dp"
+    android:background="@drawable/bg_purple_rounded">
     <au.com.shehacks.seven.seven.views.images.SmallThumbnailImageView
         android:id="@+id/profileImage"
         android:layout_width="60dp"
@@ -9,8 +10,7 @@
         android:layout_centerVertical="true"
         android:layout_alignParentStart="true"
         android:layout_marginStart="@dimen/activity_horizontal_margin"
-        android:src="@drawable/spent_coin"/>
-
+        android:src="@drawable/logo_mark"/>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -23,12 +23,14 @@
             android:id="@+id/day_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:text="SEEDLINGS"
             android:textSize="24sp"/>
         <TextView
             android:id="@+id/date_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:text="Oxfam Australia"
             android:textSize="18sp"/>
     </LinearLayout>
@@ -39,14 +41,8 @@
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:text="22/07/16"
+        android:textColor="@color/white"
         android:layout_alignParentEnd="true"
         android:layout_marginRight="16dp"
         android:textSize="20sp"/>
-
-    <View
-        android:id="@+id/separator"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_alignParentBottom="true"
-        android:background="@color/steel" />
 </RelativeLayout>

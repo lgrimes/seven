@@ -18,6 +18,8 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:text="LESSON 3"
+            android:textStyle="bold"
+            android:textColor="@color/primaryOrange"
             android:textSize="26sp"
             android:layout_marginTop="@dimen/activity_horizontal_margin"
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
@@ -25,9 +27,10 @@
         <TextView
             android:layout_width="200dp"
             android:layout_height="wrap_content"
+            android:textSize="20sp"
             android:text="What impact can $5 make? (10 mins)"
             android:layout_margin="@dimen/activity_horizontal_margin"/>
-    </LinearLayout>
+        </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:orientation="vertical"
@@ -36,6 +39,8 @@
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:text="LESSON 2"
+                android:textStyle="bold"
+                android:textColor="@color/primaryOrange"
                 android:layout_gravity="end"
                 android:textSize="26sp"
                 android:layout_marginTop="@dimen/activity_horizontal_margin"
@@ -45,6 +50,7 @@
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
+                android:textSize="20sp"
                 android:text="Why should i donate? (7 Mins)"
                 android:layout_margin="@dimen/activity_horizontal_margin"/>
         </LinearLayout>
@@ -56,6 +62,8 @@
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:text="LESSON 1"
+                android:textStyle="bold"
+                android:textColor="@color/primaryOrange"
                 android:textSize="26sp"
                 android:layout_marginTop="@dimen/activity_horizontal_margin"
                 android:layout_marginLeft="@dimen/activity_horizontal_margin"
@@ -63,6 +71,7 @@
             <TextView
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
+                android:textSize="20sp"
                 android:text="What impact can $5 make?\n(6 Mins)"
                 android:layout_margin="@dimen/activity_horizontal_margin"/>
         </LinearLayout>
