@@ -18,6 +18,7 @@ public class UserSelectionActivity extends AppCompatActivity {
     ProfileThumbnailView childOne;
     ProfileThumbnailView childTwo;
     ProfileThumbnailView childThree;
+    ProfileThumbnailView childFour;
     Button leaderboardButton;
 
     @Override
@@ -48,13 +49,20 @@ public class UserSelectionActivity extends AppCompatActivity {
     }
 
     private void setupChildren() {
-        childOne.setUsernameAndImage("Jessica", getResources().getDrawable(R.drawable.sprout));
-        childTwo.setUsernameAndImage("Tom", getResources().getDrawable(R.drawable.sprout));
-        childThree.setUsernameAndImage("Make New", getResources().getDrawable(R.drawable.add_child));
+        childOne.setUsernameAndImage("Mum", getResources().getDrawable(R.drawable.koala_orange));
+        childTwo.setUsernameAndImage("Curtis", getResources().getDrawable(R.drawable.fox_green));
+        childThree.setUsernameAndImage("Anna", getResources().getDrawable(R.drawable.whale_yellow));
+        //childFour.setUsernameAndImage("Make New", getResources().getDrawable(R.drawable.plus));
+
     }
 
     public void newChild(View view){
         Intent intent = new Intent(this, RegisterChildActivity.class);
+        startActivity(intent);
+    }
+
+    public void dashboardActivity(View view){
+        Intent intent = new Intent(this, DashboardActivity.class);
         startActivity(intent);
     }
 }

@@ -2,45 +2,47 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="100dp">
+    <au.com.shehacks.seven.seven.views.images.SmallThumbnailImageView
+        android:id="@+id/profileImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:src="@drawable/spent_coin"/>
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:layout_toRightOf="@+id/profileImage"
         android:layout_marginStart="@dimen/activity_horizontal_margin"
-        android:layout_alignParentStart="true"
         android:layout_centerVertical="true"
         android:id="@+id/date">
         <TextView
             android:id="@+id/day_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sunday"
-            android:textSize="18sp"/>
+            android:text="SEEDLINGS"
+            android:textSize="24sp"/>
         <TextView
             android:id="@+id/date_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="31st July 2016"
-            android:textSize="15sp"/>
+            android:text="Oxfam Australia"
+            android:textSize="18sp"/>
     </LinearLayout>
 
     <TextView
         android:id="@+id/amount_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toLeftOf="@+id/profileImage"
         android:layout_centerVertical="true"
-        android:text="$10"
-        android:layout_marginRight="16dp"
-        android:textSize="24sp"/>
-
-    <au.com.shehacks.seven.seven.views.images.SmallThumbnailImageView
-        android:id="@+id/profileImage"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_centerVertical="true"
+        android:text="22/07/16"
         android:layout_alignParentEnd="true"
-        android:src="@drawable/spent_coin"/>
+        android:layout_marginRight="16dp"
+        android:textSize="20sp"/>
+
     <View
         android:id="@+id/separator"
         android:layout_width="match_parent"
