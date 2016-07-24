@@ -12,6 +12,11 @@
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:src="@drawable/sprout"
-        android:layout_below="@+id/name_text"
-        android:clickable="true" />
+        android:layout_below="@+id/name_text"/>
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/profileImage"
+        android:background="@color/steel" />
 </RelativeLayout>

@@ -13,6 +13,15 @@
         android:textSize="16sp"
         android:textStyle="bold"
         android:clickable="true"/>
+    <TextView
+        android:id="@+id/family_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="The Tan Family"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:clickable="true"/>
     <au.com.shehacks.seven.seven.views.cells.LeaderboardCell
         android:id="@+id/child_one"
         android:layout_width="match_parent"
@@ -25,4 +34,12 @@
         android:id="@+id/child_three"
         android:layout_width="match_parent"
         android:layout_height="150dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:text="FAMILY TOTAL: $95.15"/>
 </LinearLayout>
