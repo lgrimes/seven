@@ -4,12 +4,19 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:id="@+id/app_icon"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"/>
     <LinearLayout
         android:orientation="vertical"
         android:layout_margin="@dimen/activity_horizontal_margin"
-        android:layout_centerInParent="true"
+        android:layout_below="@+id/app_icon"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_above="@+id/submit_button"
         android:weightSum="2">
         <LinearLayout
@@ -20,32 +27,49 @@
             android:weightSum="2">
             <au.com.shehacks.seven.seven.views.cells.ProfileThumbnailView
                 android:id="@+id/child_one"
-                android:layout_width="wrap_content"
+                android:layout_width="60dp"
                 android:layout_height="wrap_content"
+                android:onClick="dashboardActivity"
+                android:clickable="true"
                 android:layout_weight="1"/>
             <au.com.shehacks.seven.seven.views.cells.ProfileThumbnailView
                 android:id="@+id/child_two"
-                android:layout_width="wrap_content"
+                android:layout_width="60dp"
                 android:layout_height="wrap_content"
+                android:onClick="dashboardActivity"
+                android:clickable="true"
                 android:layout_weight="1"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="2">
             <au.com.shehacks.seven.seven.views.cells.ProfileThumbnailView
                 android:id="@+id/child_three"
-                android:layout_width="wrap_content"
+                android:layout_width="60dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="dashboardActivity"
+                android:clickable="true" />
+            <ImageView
+                android:id="@+id/child_four"
+                android:src="@drawable/plus"
+                android:layout_width="60dp"
+                android:layout_gravity="center"
+                android:paddingBottom="20dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
                 android:onClick="newChild"
                 android:clickable="true" />
         </LinearLayout>
     </LinearLayout>
     <Button
-        style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
         android:id="@+id/submit_button"
-        android:background="@color/colorPrimaryDark"
+        android:background="@drawable/bg_primary_button"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:layout_alignParentBottom="true"
         android:text="Leaderboard"
         android:textColor="@color/white"
