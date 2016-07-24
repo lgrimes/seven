@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@color/primaryPurple">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:text="THIS WEEK YOU MADE:"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:text="$15"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:text="How much do you want\nto give to charity?"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:src="@drawable/progress_bar"/>
+    <Button
+        android:id="@+id/submit_button"
+        android:background="@drawable/bg_primary_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Save"
+        android:layout_marginTop="45dp"
+        android:textColor="@color/white"
+        />
+</LinearLayout>
