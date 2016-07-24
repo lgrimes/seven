@@ -83,7 +83,7 @@ public class BaseActivity extends AppCompatActivity
                 break;
 
             case R.id.nav_settings:
-                intent = new Intent(this, UserSelectionActivity.class);
+                intent = new Intent(this, UserProgressActivity.class);
                 startActivity(intent);
                 break;
         }
