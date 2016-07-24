@@ -5,9 +5,10 @@
     android:layout_height="match_parent">
     <TextView
         android:id="@+id/close_button"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="right"
+        android:gravity="right"
+        android:background="@color/wildSand"
         android:padding="@dimen/activity_horizontal_margin"
         android:text="Close"
         android:textSize="16sp"
@@ -25,21 +26,24 @@
     <au.com.shehacks.seven.seven.views.cells.LeaderboardCell
         android:id="@+id/child_one"
         android:layout_width="match_parent"
-        android:layout_height="150dp" />
+        android:background="@color/primaryPurple"
+        android:layout_height="120dp" />
     <au.com.shehacks.seven.seven.views.cells.LeaderboardCell
         android:id="@+id/child_two"
         android:layout_width="match_parent"
-        android:layout_height="150dp" />
+        android:background="@color/primaryYellow"
+        android:layout_height="120dp" />
     <au.com.shehacks.seven.seven.views.cells.LeaderboardCell
         android:id="@+id/child_three"
         android:layout_width="match_parent"
-        android:layout_height="150dp" />
+        android:layout_height="120dp"
+        android:background="@color/primaryDarkGreen"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
         android:gravity="end"
         android:textSize="22sp"
         android:textStyle="bold"
-        android:layout_marginEnd="@dimen/activity_horizontal_margin"
         android:text="FAMILY TOTAL: $95.15"/>
 </LinearLayout>
