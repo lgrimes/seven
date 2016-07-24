@@ -27,13 +27,11 @@
     </android.support.design.widget.TextInputLayout>
 
     <Button
-        style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
         android:id="@+id/createChild"
+        android:onClick="onCreateChildPressed"
         android:layout_width="match_parent"
         android:text="Create User"
         android:layout_alignParentBottom="true"
         android:layout_margin="@dimen/activity_horizontal_margin"
-        android:layout_height="wrap_content"
-        android:enabled="true"
-        android:clickable="true" />
+        android:layout_height="wrap_content" />
 </RelativeLayout>
