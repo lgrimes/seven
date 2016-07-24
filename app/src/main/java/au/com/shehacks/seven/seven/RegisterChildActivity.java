@@ -1,6 +1,7 @@
 package au.com.shehacks.seven.seven;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.content.Intent;
 import android.widget.Button;
@@ -10,6 +11,9 @@ import android.widget.Button;
  * Created by hails on 23/07/16.
  */
 public class RegisterChildActivity extends BaseActivity {
+
+    public static final String TAG = RegisterChildActivity.class.getSimpleName();
+
     Button createButton;
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,20 +22,14 @@ public class RegisterChildActivity extends BaseActivity {
         setViews();
     }
 
-    private View.OnClickListener listen = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            onCreateChildPressed(v);
-        }
-    };
-
     private void setViews() {
         createButton = (Button) findViewById(R.id.createChild);
-        createButton.setOnClickListener(listen);
+
     }
 
     public void onCreateChildPressed(View view){
-        Intent intent = new Intent(view.getContext(), CharitySelectionActivity.class);
+        Log.d(TAG, "pressed");
+        Intent intent = new Intent(this, CharitySelectionActivity.class);
         startActivity(intent);
     }
 }

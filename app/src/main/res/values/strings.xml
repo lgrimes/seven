@@ -11,4 +11,5 @@
     <string name="education_home_background">education home background</string>
     <string name="education_pick_page">Education pick page</string>
     <string name="new_button">New Button</string>
+    <string name="title_activity_charity_selection">CharitySelectionActivity</string>
 </resources>

@@ -15,7 +15,7 @@ public class EducationActivity extends BaseActivity {
     }
 
     public void pick(View view){
-        Intent intent = new Intent(this, EducationLearnPickActivity.class);
+        Intent intent = new Intent(getApplicationContext(), EducationLearnPickActivity.class);
         startActivity(intent);
     }
 }
