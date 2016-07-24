@@ -6,6 +6,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="@dimen/activity_vertical_margin"
+        android:textColor="@color/white"
         android:text="Jessica"/>
     <au.com.shehacks.seven.seven.views.images.SmallThumbnailImageView
         android:id="@+id/profileImage"
@@ -18,5 +19,5 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_below="@id/profileImage"
-        android:background="@color/steel" />
+        android:background="@color/white" />
 </RelativeLayout>
