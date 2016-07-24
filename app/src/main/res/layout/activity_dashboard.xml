@@ -8,14 +8,58 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".DashboardActivity">
-    <TextView
+    <RelativeLayout
         android:id="@+id/text"
-        android:layout_width="wrap_content"
-        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
         android:layout_centerHorizontal="true"
-        android:padding="30dp"
-        android:gravity="center"
-        android:text="Progress view for goals" />
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        >
+        <au.com.shehacks.seven.seven.views.images.SmallThumbnailImageView
+            android:id="@+id/imageView"
+            android:layout_marginTop="30dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/whale_yellow"
+            android:layout_alignParentStart="true"/>
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/imageView"
+            android:text="ANNA"/>
+        <TextView
+            android:id="@+id/stats_tv"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textSize="18sp"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:text="MY STATS"/>
+        <TextView
+            android:id="@+id/money_tv"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="$25"
+            android:textSize="26sp"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/stats_tv"/>
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="10 Stars"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/money_tv"
+            />
+        </RelativeLayout>
 
     <View
         android:id="@+id/separator"
