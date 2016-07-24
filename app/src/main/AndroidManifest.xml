@@ -52,6 +52,10 @@
             android:name=".CharitySelectionActivity"
             android:label="@string/title_activity_charity_selection"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".UserProgressActivity"
+            android:label="Your Settings"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>
