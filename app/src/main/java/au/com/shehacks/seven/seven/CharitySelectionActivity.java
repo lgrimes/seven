@@ -17,7 +17,7 @@ public class CharitySelectionActivity extends BaseActivity {
     }
 
     public void popUp(){
-        findViewById(R.id.popUpImage).setVisible(true);
+        findViewById(R.id.popUpImage).setVisibility(View.VISIBLE);
     }
 
 }
